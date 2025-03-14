@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Stark</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="mine.js"></script>
+</head>
+<body>
+    <!--navbar-->
+    <nav class="navbar">
+        <div class="nav-left ">
+            <div class="logo-nav">
+                <a href="#"><img src="images/logo.png" alt="" width="40px" height="40px"></a>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"> USE CASES </button>
+                <div class="dropdown-content">
+                    <div class="grid-container">
+                        <div class="grid-item">
+                            <h3>Designers</h3>
+                            <p>Create accessible designs in record time right in Figma & Sketch.</p>
+                        </div>
+                        <div class="grid-item">
+                            <h3>Product Managers</h3>
+                            <p>Manage accessibility in real-time across all your projects.</p>
+                        </div>
+                        <div class="grid-item">
+                            <h3>Developers</h3>
+                            <p>Test and audit your code from early implementation to live product.</p>
+                        </div>
+                        <div class="grid-item">
+                            <h3>Compliance Managers</h3>
+                            <p>Monitor, manage and audit your accessibility posture in one place.</p>
+                        </div>
+                    </div>
+                    <div class="sidebar">
+                        <img src="images/white_paper.png" alt="White Paper">
+                        <h3>Read our new white paper</h3>
+                        <p>Managing a modern accessibility posture and growing accessibility maturity at any scale</p>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="nav-link">PRICING</a>
+            <a href="#" class="nav-link">SUPPORT</a>
+            
+            <div class="dropdown">
+                <button class="dropbtn">RESOURCES</button>
+                <div class="dropdown-content">
+                        <div class="sidebar Resource">
+                            <img src="images/medium_Header.png" alt="Resource">
+                            <h3>Announcing Public Compliance Center</h3>
+                            <a href="#">Read more on the blog</a>
+                        </div>
+                        <div class="grid-container">
+                            <div class="grid-item">
+                                <h3>Blog</h3>
+                                <p>Read about the latest updates to Stark and articles from our team.</p>
+                            </div>
+                            <div class="grid-item">
+                                <h3>Library</h3>
+                                <p>Learn about all things accessibility and inclusive design.</p>
+                            </div>
+                            <div class="grid-item">
+                                <h3>The WCAG Explained</h3>
+                                <p>Simple explanations of every WCAG criteria.</p>
+                            </div>
+                            <div class="grid-item">
+                                <h3>Support Center</h3>
+                                <p>Find answers to your questions plus tips and tricks on how to use Stark.</p>
+                            </div>
+                            <div class="grid-item">
+                                <h3>Community</h3>
+                                <p>Join more than 3,500 accessibility folks from around the world.</p>
+                            </div>
+                            <div class="grid-item">
+                                <h3>Stark White Paper</h3>
+                                <p>Managing and growing your accessibility posture at any scale.</p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div class="nav-right ">
+                <a href="#" class="nav-link leftbtn">LOG IN</a>
+                <a href="#" class="btn">START FREE TEAM TRIAL</a>
+                <div class="menu-icon">
+                    <i class="fa fa-bars" aria-hidden="true" id="open-menu"></i>
+                    <i class="fa fa-times hidden" id="close-menu"></i>
+                </div>
+            </div>
+
+        </div>
+        <div class="menubar" id="menubar">
+            <ul>
+                <li><a href="#" class="section-title">LOG IN</a></li>
+                <li>
+                    <a href="#" class="section-title"><span>USE CASES</span>
+                        </a>
+                    <ul class="submenu">
+                        <li><a href="#">For Designers</a></li>
+                        <li><a href="#">For Developers</a></li>
+                        <li><a href="#">For Product Managers</a></li>
+                        <li><a href="#">For Compliance Managers</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" class="section-title">PRICING</a></li>
+                <li><a href="#" class="section-title">SUPPORT</a></li>
+                <li><a href="#" class="section-title">BLOG</a></li>
+                <li><a href="#" class="section-title">LIBRARY</a></li>
+                <li><a href="#" class="section-title">THE WCAG EXPLAINED</a></li>
+            </ul>
+        </div>
+       
+       
+    </nav>
+
+
+    <main class="main">
+        <section class="section-one">hi</section>
+        <section class="section-two">no</section>
+    </main>
+
+
+
+<script>
+ const openMenu = document.getElementById('open-menu');
+const closeMenu = document.getElementById('close-menu');
+const menubar = document.querySelector('.menubar');
+
+// عند الضغط على bars
+openMenu.addEventListener('click', () => {
+    menubar.classList.add('active');
+    openMenu.style.display = 'none'; // إخفاء أيقونة bars
+    closeMenu.style.display = 'block'; // إظهار أيقونة times
+});
+
+// عند الضغط على times
+closeMenu.addEventListener('click', () => {
+    menubar.classList.remove('active');
+    openMenu.style.display = 'block'; // إظهار أيقونة bars
+    closeMenu.style.display = 'none'; // إخفاء أيقونة times
+});
+
+</script>
+</body>
+</html>
